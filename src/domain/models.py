@@ -8,7 +8,6 @@ engine = create_engine('sqlite:///example.db', echo=True)
 
 Base = declarative_base()
 
-
 class UserStatus(Base):
   __tablename__ = 'user_statuses'  # 테이블 이름 수정
 
@@ -17,7 +16,7 @@ class UserStatus(Base):
   second = Column(String)
   midnight = Column(String)
   absent = Column(String)
-  training = Column(String)  # 오타 수정: tranning -> training
+  training = Column(String)  
   etc = Column(String)
   rest = Column(String)
   early = Column(String)
