@@ -1,6 +1,6 @@
-from src.config.IocContainer import AppContext
-from src.config.ContextType import ( RepositoryType, ServiceType )
-from src.config.database_util import DatabaseUtil
+from ..src.config.IocContainer import AppContext
+from ..src.config.ContextType import ( RepositoryType, ServiceType )
+from ..src.config.database_util import DatabaseUtil
 
 def testData() :
   userService = AppContext.get(ServiceType.USER_STATUS_SERVICE)
